@@ -3,7 +3,6 @@ package com.websystique.springmvc.configuration;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
@@ -17,9 +16,7 @@ public class Atom
 	public String name;
 	
 	private JdbcTemplate jdbcTemplate;
-	
-
-	public DataSource datasource;
+	public DataSource dataSource;
 	
 	
 	public Atom(String org, String name)
