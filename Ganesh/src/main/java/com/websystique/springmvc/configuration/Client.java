@@ -17,7 +17,7 @@ public class Client
 		
 		Atom obj=(Atom) context.getBean("testing");
 		
-		obj.insertData();
+		obj.DispData();
 		
 	//	obj.annotationbaedTM();
 		

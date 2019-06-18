@@ -2,6 +2,7 @@ package com.websystique.springmvc.configuration;
 
 import javax.sql.DataSource;
 
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,6 +11,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
 
 @Configuration
 @EnableAspectJAutoProxy
@@ -41,8 +43,15 @@ public class HelloWorldConfiguration
 	
 	
 	 @Bean
-	  public PlatformTransactionManager txManager() 
-	  {
-	         return new DataSourceTransactionManager(setdataSource());
-	  }
+	 public PlatformTransactionManager txManager() 
+	 {
+	    return new DataSourceTransactionManager(setdataSource());
+	 }
+	 
+	 @Bean
+	 public AOP setAOP()
+	 {
+		 return new AOP();
+	 }
+	 
 }

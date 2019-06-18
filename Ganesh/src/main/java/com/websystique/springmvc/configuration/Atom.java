@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
+@Component
 public class Atom
 {
 
@@ -44,6 +45,16 @@ public class Atom
 	
 	
 	
+	public void DispData()
+	{
+		System.out.println(org);
+	}
+	
+	
+	public void DisplayData()
+	{
+		System.out.println(org);
+	}
 
 	
 	public void insertData()
