@@ -1,5 +1,5 @@
 package com.websystique.springmvc.domain;
-
+/*
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -29,3 +29,4 @@ public class Message {
 	}
 
 }
+*/

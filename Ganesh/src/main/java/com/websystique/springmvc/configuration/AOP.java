@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Before;
 public class AOP
 {
 
-	    @Before("Atom.insertData()")
+	    @Before(value="Atom.insertData()")
 	    public void logBeforeAllMethods()
 	    {
 	        System.out.println("\n\n\n ****LoggingAspect.logBeforeAllMethods() : \n\n\n ");

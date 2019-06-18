@@ -64,10 +64,10 @@ public class Atom
 		
 				jdbcTemplate.update(sql,new Object[] {"1"});
 				jdbcTemplate.update(sql,new Object[] {"2"});
-				jdbcTemplate.update(sql,new Object[] {"zxzxzxxzxzxzxzxzxz"});
+				jdbcTemplate.update(sql,new Object[] {"3"});
 				jdbcTemplate.update(sql,new Object[] {"4"});
 		
-			transactionManager.commit(status);
+			    transactionManager.commit(status);
 			
 			
 			

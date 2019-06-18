@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.websystique.springmvc.configuration.AOP;
 import com.websystique.springmvc.configuration.Atom;
-import com.websystique.springmvc.domain.Message;
+
 
 @RestController
 public class HelloWorldRestController 
@@ -37,14 +37,14 @@ public class HelloWorldRestController
 		return "Welcome to RestTemplate Example.";
 	}
 
-	@RequestMapping("/hello/{player}")
+	/*@RequestMapping("/hello/{player}")
 	public Message message(@PathVariable String player) 
 	{
 		//REST Endpoint.
 
 		Message msg = new Message(player, "Hello " + player);
 		return msg;
-	}
+	}*/
 	
 	
 	@ExceptionHandler(Exception.class)

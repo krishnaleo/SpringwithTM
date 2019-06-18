@@ -19,7 +19,7 @@ public class Client
 		
 		obj.insertData();
 		
-		obj.annotationbaedTM();
+	//	obj.annotationbaedTM();
 		
 	}
 
