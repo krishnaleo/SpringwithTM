@@ -11,13 +11,13 @@ public class Client
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-
 		
 		ApplicationContext context=new AnnotationConfigApplicationContext(Test.class);
 		
 		Atom obj=(Atom) context.getBean("testing");
 		
 		obj.DispData();
+		obj.chkData("Ture");
 		
 	//	obj.annotationbaedTM();
 		

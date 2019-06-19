@@ -57,6 +57,11 @@ public class Atom
 	}
 
 	
+	public void chkData(String val)
+	{
+		System.out.println("this will be printed if teh leth is greater than 3   : Current Len\t"+val.length());
+	}
+	
 	public void insertData()
 	{
 		
